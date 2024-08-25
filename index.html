@@ -93,6 +93,23 @@
             height: auto;
             border: 2px solid #000; /* Agrega un borde negro similar al de la imagen */
         }
+        .videos-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px; /* Espacio entre los elementos */
+        }
+        
+        .video-item {
+            width: 48%; /* Ajusta este valor para controlar el tamaño de los videos */
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            color: blue;
+            margin-bottom: 10px;
+            font-family: 'Oswald', sans-serif;
+        }
+
     </style>
 </head>
 <body class="dark-mode">
@@ -178,17 +195,19 @@
                 </div>
             </section>
 
-            <section id="screenshots">
-                <h2 class="section-title">Trailer del Juego</h2>
-                    <div class="section-item">
+            <section id="videos">
+                <div class="videos-container">
+                    <div class="video-item">
+                        <h2 class="section-title">Trailer del Juego</h2>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/B_9w6my2Rws" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p>Un breve trailer mostrando las características del juego.</p>
                     </div>
-                <h2 class="section-title">Video de Gameplay</h2>
-                    <div class="section-item">
+                    <div class="video-item">
+                        <h2 class="section-title">Video de Gameplay</h2>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/B_9w6my2Rws" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p>Un video detallado mostrando la jugabilidad.</p>
                     </div>
+                </div>
             </section>
 
             <section id="download-instructions">
