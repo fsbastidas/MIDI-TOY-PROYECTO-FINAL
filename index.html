@@ -13,28 +13,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         #wrapper {
             display: flex;
-        }
-
-        .list-group-item {
-            display: block;
-            width: 90%;
-            text-align: left;
-            color: white;
-            font-size: 0.9rem;
-            text-decoration: none;
-        }
-
-        .list-group-item-action:hover {
-            background-color: #495057;
         }
 
         .navbar-body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 80%;
+            width: 100%; /* Ajustado a 100% para ocupar toda la pantalla */
+            padding: 0 20px;
         }
 
         .navbar-title {
@@ -54,7 +48,7 @@
 
         #page-content-wrapper {
             flex: 1;
-            max-width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+            width: 100%; /* Ocupa todo el ancho */
             margin: 0; /* Elimina cualquier margen */
             padding: 0 20px; /* Ajusta el padding si es necesario */
         }
@@ -108,9 +102,10 @@
         }
 
         .container-fluid {
-            max-width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+            width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
             padding-left: 0; /* Elimina cualquier padding en la izquierda */
             padding-right: 0; /* Opcional: Elimina el padding derecho si es necesario */
+            margin: 0; /* Elimina cualquier margen */
         }
     </style>
 </head>
@@ -223,3 +218,4 @@
     </div>
 </body>
 </html>
+
