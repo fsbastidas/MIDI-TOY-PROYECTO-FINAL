@@ -78,6 +78,21 @@
             margin-top: 1rem;
             font-family: 'Oswald', sans-serif;
         }
+
+        .screenshots-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .section-item {
+            width: 48%; /* Ajusta esto para espaciar las imágenes */
+            margin-bottom: 20px;
+        }
+        .section-item img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #000; /* Agrega un borde negro similar al de la imagen */
+        }
     </style>
 </head>
 <body class="dark-mode">
@@ -123,49 +138,43 @@
 
             <section id="screenshots">
                 <h2 class="section-title">Pantallas Vendedoras</h2>
-                <div class="section-item">
-                    <p>PANTALLA DE INICIO: Menú principal del juego.</p>
-                    <img src="./ActivosIMG/INICIO.png" alt="Pantalla de Inicio">
-                </div>
-                
-                <div class="section-item">
-                    <p>OPCIONES: Sección Configuraciones.</p>
-                    <img src="./ActivosIMG/OPCIONES.png" alt="Sección Configuraciones">
-                </div>
-                
-                <div class="section-item">
-                    <p>OPCIONES: Información del juego.</p>
-                    <img src="./ActivosIMG/INFORMACION.png" alt="Información del juego">
-                </div>
-
-                <div class="section-item">
-                    <p>JUGAR: Seccion Niveles</p>
-                    <img src="./ActivosIMG/NIVELES.png" alt="Seccion Niveles">
-                </div>
-
-                <div class="section-item">
-                    <p>JUGAR: Selección de Ayudante</p>
-                    <img src="./ActivosIMG/PERSONAJES.png" alt="Selección de Ayudante">
-                </div>
-                
-                <div class="section-item">
-                    <p><strong>NIVEL 1: Arrastrar y soltar animales en los slots correctos.</p>
-                    <img src="./ActivosIMG/NIVEL1.png" alt="Interacción con Animales">
-                </div>
-                
-                <div class="section-item">
-                    <p><strong>NIVEL 2: Escucha y Selecciona el Animal Correcto.</p>
-                    <img src="./ActivosIMG/NIVEL 2.png" alt="Interacción con Animales">
-                </div>
-
-                <div class="section-item">
-                    <p><strong>NIVEL 3: Refuerza tu memoria con Sonido e Imagen, descubre el Animal.</p>
-                    <img src="./ActivosIMG/NIVEL 3.png" alt="Interacción con Animales">
-                </div>
-
-                <div class="section-item">
-                    <p><strong>PANTALLA FINAL: JUEGO TERMINADO</p>
-                    <img src="./ActivosIMG/FINAL.png" alt="Juego Terminado">
+                <div class="screenshots-container">
+                    <div class="section-item">
+                        <p>PANTALLA DE INICIO: Menú principal del juego.</p>
+                        <img src="./ActivosIMG/INICIO.png" alt="Pantalla de Inicio">
+                    </div>
+                    <div class="section-item">
+                        <p>OPCIONES: Sección Configuraciones.</p>
+                        <img src="./ActivosIMG/OPCIONES.png" alt="Sección Configuraciones">
+                    </div>
+                    <div class="section-item">
+                        <p>OPCIONES: Información del juego.</p>
+                        <img src="./ActivosIMG/INFORMACION.png" alt="Información del juego">
+                    </div>
+                    <div class="section-item">
+                        <p>JUGAR: Sección Niveles.</p>
+                        <img src="./ActivosIMG/NIVELES.png" alt="Sección Niveles">
+                    </div>
+                    <div class="section-item">
+                        <p>JUGAR: Selección de Ayudante.</p>
+                        <img src="./ActivosIMG/PERSONAJES.png" alt="Selección de Ayudante">
+                    </div>
+                    <div class="section-item">
+                        <p>NIVEL 1: Arrastrar y soltar animales en los slots correctos.</p>
+                        <img src="./ActivosIMG/NIVEL1.png" alt="Interacción con Animales">
+                    </div>
+                    <div class="section-item">
+                        <p>NIVEL 2: Escucha y Selecciona el Animal Correcto.</p>
+                        <img src="./ActivosIMG/NIVEL 2.png" alt="Interacción con Animales">
+                    </div>
+                    <div class="section-item">
+                        <p>NIVEL 3: Refuerza tu memoria con Sonido e Imagen, descubre el Animal.</p>
+                        <img src="./ActivosIMG/NIVEL 3.png" alt="Interacción con Animales">
+                    </div>
+                    <div class="section-item">
+                        <p>PANTALLA FINAL: JUEGO TERMINADO.</p>
+                        <img src="./ActivosIMG/FINAL.png" alt="Juego Terminado">
+                    </div>
                 </div>
             </section>
 
